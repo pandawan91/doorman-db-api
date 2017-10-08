@@ -31,7 +31,7 @@
 
         // Get /api/card/validate/{cardId}
         [HttpGet]
-        public bool ValidateCard([FromUri] int cardId)
+        public bool Validate([FromUri] int cardId)
         {
             if (cardId < 0)
                 throw new ArgumentOutOfRangeException(nameof(cardId));
