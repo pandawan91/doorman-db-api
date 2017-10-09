@@ -12,6 +12,6 @@
         public int Id { get; set; }
 
         [Required]
-        public int CardId { get; set; }
+        public long CardId { get; set; }
     }
 }

@@ -18,7 +18,7 @@
             _unitOfWork = new UnitOfWork(context);
         }
 
-        public void AddCardIdIfNotExists(int cardId)
+        public void AddCardIdIfNotExists(long cardId)
         {
             if (cardId < 0)
                 throw new ArgumentOutOfRangeException(nameof(cardId));
@@ -31,7 +31,7 @@
             }
         }
 
-        public bool IsCardIdInDataBase(int cardId)
+        public bool IsCardIdInDataBase(long cardId)
         {
             if (cardId < 0)
                 throw new ArgumentOutOfRangeException(nameof(cardId));

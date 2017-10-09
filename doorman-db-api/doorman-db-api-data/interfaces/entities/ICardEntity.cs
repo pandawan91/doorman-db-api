@@ -2,6 +2,6 @@
 {
     public interface ICardEntity : IEntity
     {
-        int CardId { get; }
+        long CardId { get; }
     }
 }

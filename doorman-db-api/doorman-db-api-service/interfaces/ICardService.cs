@@ -2,7 +2,7 @@
 {
     public interface ICardService
     {
-        void AddCardIdIfNotExists(int cardId);
-        bool IsCardIdInDataBase(int cardId);
+        void AddCardIdIfNotExists(long cardId);
+        bool IsCardIdInDataBase(long cardId);
     }
 }

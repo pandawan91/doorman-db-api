@@ -22,7 +22,7 @@
 
         // POST /api/card/add
         [HttpPost]
-        public void Add([FromBody] int cardId)
+        public void Add([FromBody] long cardId)
         {
             if (cardId < 0)
                 throw new ArgumentOutOfRangeException(nameof(cardId));
@@ -31,7 +31,7 @@
 
         // Get /api/card/validate/{cardId}
         [HttpGet]
-        public bool Validate([FromUri] int cardId)
+        public bool Validate([FromUri] long cardId)
         {
             if (cardId < 0)
                 throw new ArgumentOutOfRangeException(nameof(cardId));
